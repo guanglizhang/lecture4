@@ -16,6 +16,11 @@ class Flight:
         self.destination = destination
         self.duration = duration
 
+# Note that counter is defined outside of the __init__ function and is not specific to individual flights (it’s not defined as self.counter. 
+# This means that all flight objects can see this same counter variable, which allows for the implementation the id property shown here. 
+# Similar to the SQL database which had an auto-incrementing id column, 
+# the id property of flights will automatically incrememt as new flight objects are created.
+
     def print_info(self):
         print(f"Flight origin: {self.origin}")
         print(f"Flight destination: {self.destination}")
@@ -33,12 +38,13 @@ class Flight:
         self.passengers.append(p)
         p.flight_id = self.id
 
+# In add_passenger, p.flight_id is created, because flight_id is not defined in the Passenger class’s __init__.
+# The passengers property of Flights is going to be a list of Passenger objects.
 
 class Passenger:
 
     def __init__(self, name):
         self.name = name
-
 
 def main():
 
