@@ -13,6 +13,11 @@ class Flight:
     def delay(self, amount):
         self.duration += amount
 
+# Note that writing methods like delay and print_info, 
+# as well just the idea of Flight class in general, allow for abstraction. 
+
+# The Flight class and all of its methods can be used in a logical and easily 
+# understood way without needing to know or even understand how Flight may be implemented
 
 def main():
 
