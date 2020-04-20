@@ -22,3 +22,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Now, this functionality of printing out flight info can be used with any flight object that might be created. 
+# Each time, self refers to the object that the method is being called on. In this example, that’s f1 and f2.
