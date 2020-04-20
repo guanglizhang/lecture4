@@ -51,7 +51,7 @@ def main():
     # Create flight.
     f1 = Flight(origin="New York", destination="Paris", duration=540)
 
-    # Create passengers.
+    # Create passengers using Passenger class.
     alice = Passenger(name="Alice")
     bob = Passenger(name="Bob")
 
