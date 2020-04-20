@@ -21,3 +21,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Note that only flight information is passed in to Flight(); 
+# the self argument to the __init__ method is automatically specified.
+# f is a variable of type Flight, just like a variable might be of type str or int.
